@@ -1,6 +1,9 @@
 <template>
   <div class="start-screen">
     <div class="heart-icon">🤍</div>
+    <div class="cover-photo">
+      <img src="/images/cover.jpg" alt="Portada" />
+    </div>
     <h1>¡Felices 6 meses amor!</h1>
     <p>No vale picarse jejej</p>
     <div class="players-preview">
@@ -31,6 +34,23 @@ h1 {
 .heart-icon {
   font-size: 4rem;
   animation: pulse 1.5s infinite;
+  margin-bottom: 1rem;
+}
+
+.cover-photo {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cover-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .players-preview {

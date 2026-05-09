@@ -1,8 +1,8 @@
 <template>
   <div class="start-screen">
-    <div class="heart-icon">❤️</div>
-    <h1>¡Feliz Aniversario!</h1>
-    <p>¿Quién tiene mejor memoria?</p>
+    <div class="heart-icon">🤍</div>
+    <h1>¡Felices 6 meses amor!</h1>
+    <p>No vale picarse jejej</p>
     <div class="players-preview">
       <span>Maria</span> vs <span>Carlos</span>
     </div>

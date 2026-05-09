@@ -15,8 +15,8 @@
     </div>
 
     <div class="romantic-message">
-      <p>No importa quién gane, el mayor premio es estar juntos. ❤️</p>
-      <p>¡Feliz aniversario!</p>
+      <p>No importa quién gane, el mayor premio es estar juntos 🤍</p>
+      <p>¡Feliz aniversario amorchete! TE AMOOOOO</p>
     </div>
 
     <button class="restart-btn" @click="$emit('restart')">Jugar de nuevo</button>

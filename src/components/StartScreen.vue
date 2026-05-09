@@ -1,14 +1,11 @@
 <template>
   <div class="start-screen">
-    <div class="heart-icon">🤍</div>
+    <div class="heart-icon">🤍🤍🤍</div>
     <div class="cover-photo">
       <img src="/images/cover.jpg" alt="Portada" />
     </div>
     <h1>¡Felices 6 meses amor!</h1>
     <p>No vale picarse jejej</p>
-    <div class="players-preview">
-      <span>Maria</span> vs <span>Carlos</span>
-    </div>
     <button class="start-btn" @click="$emit('start')">Empezar a Jugar</button>
   </div>
 </template>
@@ -41,7 +38,7 @@ h1 {
   width: 200px;
   height: 200px;
   margin: 0 auto 1.5rem;
-  border-radius: 50%;
+  border-radius: 12px;
   overflow: hidden;
   border: 4px solid white;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);

@@ -8,7 +8,9 @@
         class="player" 
         :class="{ active: currentPlayerIndex === 0 }"
       >
-        <div class="name">{{ players[0].name }}</div>
+        <div class="avatar">
+          <img :src="players[0].photo" :alt="players[0].name" />
+        </div>
         <div class="score">{{ players[0].score }}</div>
       </div>
       
@@ -18,7 +20,9 @@
         class="player" 
         :class="{ active: currentPlayerIndex === 1 }"
       >
-        <div class="name">{{ players[1].name }}</div>
+        <div class="avatar">
+          <img :src="players[1].photo" :alt="players[1].name" />
+        </div>
         <div class="score">{{ players[1].score }}</div>
       </div>
     </div>
@@ -80,9 +84,20 @@ defineProps({
   box-shadow: 0 4px 15px rgba(236, 72, 153, 0.2);
 }
 
-.name {
-  font-weight: bold;
-  font-size: 1.1rem;
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid white;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .score {

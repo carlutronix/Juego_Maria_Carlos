@@ -1,6 +1,9 @@
 <template>
   <div class="result-screen">
     <div class="winner-announcement">
+      <div class="winner-avatar" v-if="winner">
+        <img :src="winner.photo" :alt="winner.name" />
+      </div>
       <h2 v-if="isTie">¡Es un empate!</h2>
       <h2 v-else>¡{{ winner.name }} gana!</h2>
     </div>
@@ -16,7 +19,8 @@
 
     <div class="romantic-message">
       <p>No importa quién gane, el mayor premio es estar juntos 🤍</p>
-      <p>¡Feliz aniversario, amorchete! Por muchos más juntos. TE AMOOOOO</p>
+      <p>¡Feliz aniversario, amorchete! Por muchos más juntos.</p>
+      <p class="big-love">TE AMOOOOO</p>
     </div>
 
     <button class="restart-btn" @click="$emit('restart')">Jugar de nuevo</button>
@@ -59,6 +63,22 @@ const isTie = computed(() => props.players[0].score === props.players[1].score);
   margin-bottom: 1.5rem;
 }
 
+.winner-avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #ec4899;
+  box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
+}
+
+.winner-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .scores {
   background: #fdf2f8;
   padding: 1.5rem;
@@ -83,6 +103,13 @@ const isTie = computed(() => props.players[0].score === props.players[1].score);
   color: #831843;
   margin-bottom: 2rem;
   line-height: 1.6;
+}
+
+.big-love {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 1rem;
+  display: block;
 }
 
 .restart-btn {

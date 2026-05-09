@@ -33,8 +33,8 @@ import { getInitialCards } from './data/cards';
 
 const screen = ref('start'); // start, playing, result
 const players = ref([
-  { name: 'Maria', score: 0 },
-  { name: 'Carlos', score: 0 }
+  { name: 'Maria', score: 0, photo: '/images/maria.jpg' },
+  { name: 'Carlos', score: 0, photo: '/images/carlos.jpg' }
 ]);
 const currentPlayerIndex = ref(0);
 const cards = ref([]);

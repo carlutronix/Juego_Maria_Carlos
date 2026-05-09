@@ -7,10 +7,11 @@ export const getInitialCards = () => {
     '/images/IMG_2835.jpg',
     '/images/IMG_2880.jpg',
     '/images/a3aecca7-01df-4d75-b75e-a35629e8a723.jpg',
-    '/images/e0a5ca62-0928-4702-9163-4e2ccc047c98.JPG'
+    '/images/e0a5ca62-0928-4702-9163-4e2ccc047c98.JPG',
+    '/images/FullSizeRender.JPG'
   ];
   
-  // Create 8 pairs (16 cards total)
+  // Create 9 pairs (18 cards total)
   const deck = [...images, ...images].map((image, index) => ({
     id: index,
     image,

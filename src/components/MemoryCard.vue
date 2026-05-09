@@ -2,7 +2,7 @@
   <div class="card-container" :class="{ flipped: card.isFlipped || card.isMatched, matched: card.isMatched }">
     <div class="card-inner">
       <div class="card-front">
-        <div class="heart-pattern">❤️</div>
+        <div class="heart-pattern">🤍</div>
       </div>
       <div class="card-back">
         <img :src="card.image" alt="card image" />
